@@ -13,11 +13,13 @@ import javax.persistence.Id;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Connect {
+public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    String statusName;
-
+    String username;
+    String passwork;
+    String fullname;
+    String role;
 }
